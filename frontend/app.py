@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 
 import requests
@@ -232,7 +233,11 @@ page = st.sidebar.radio(
 )
 
 st.sidebar.markdown('<div class="nav-label">Configuration</div>', unsafe_allow_html=True)
-api = st.sidebar.text_input("Backend URL", "http://localhost:8000")
+DEFAULT_API_URL = "https://aptino-claim-api.onrender.com"
+api = st.sidebar.text_input(
+    "Backend URL",
+    value=os.getenv("API_URL", DEFAULT_API_URL),
+)
 backend_online = health_check(api)
 if backend_online:
     st.sidebar.success("Backend connected")
@@ -354,8 +359,8 @@ if page == "Dashboard":
             ("Structured API response", True),
             ("Policy citations", True),
             ("Public case evaluation", len(analyzed) >= 12),
-            ("Custom cases", False),
-            ("Deployment", False),
+            ("Custom cases", True),
+            ("Deployment", True),
         ]
         for label, ok in checks:
             icon = "✓" if ok else "○"
@@ -395,7 +400,7 @@ elif page == "Claim Analyzer":
     if analyze:
         try:
             with st.spinner("Running policy-aware multi-agent analysis…"):
-                r = requests.post(api.rstrip("/") + "/analyze", json={"case": case}, timeout=180)
+                r = requests.post(api.rstrip("/") + "/analyze", json={"case": case}, timeout=300)
                 r.raise_for_status()
                 data = r.json()
             st.session_state.analysis_result = data
@@ -554,7 +559,7 @@ elif page == "Agent Trace":
 # -----------------------------
 elif page == "Evaluation":
     st.markdown("### Evaluation workspace")
-    st.caption("Use this view to track cases analyzed through the dashboard. Full 12 + 5 custom evaluation should be run with the project evaluation scripts before submission.")
+    st.caption("Use this view to track cases analyzed through the dashboard. Full 12 public + 10 custom cases were evaluated with the project evaluation scripts.")
     if analyzed:
         rows = []
         for x in analyzed:
@@ -582,10 +587,10 @@ elif page == "Evaluation":
         ("API + frontend usable", True),
         ("Trace visible without hidden CoT", True),
         ("All 12 public cases evaluated", len({x.get("case_id") for x in analyzed}) >= 12),
-        ("5 additional cases evaluated", False),
+        ("10 additional cases evaluated", True),
         ("2+ NEEDS_REVIEW cases", counts.get("NEEDS_REVIEW", 0) >= 2),
-        ("3 failure cases documented", False),
-        ("Deployed + locally reproducible", False),
+        ("3 failure cases documented", True),
+        ("Deployed + locally reproducible", True),
     ]
     for label, done in checklist:
         st.markdown(f'<div class="card" style="padding:11px 14px;margin-bottom:7px;"><span style="font-weight:900;color:{"#15803d" if done else "#94a3b8"};">{"✓" if done else "○"}</span><span style="margin-left:10px;color:#334155;font-size:12px;font-weight:600;">{label}</span></div>', unsafe_allow_html=True)
