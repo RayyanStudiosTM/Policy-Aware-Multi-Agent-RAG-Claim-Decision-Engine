@@ -1,0 +1,224 @@
+{
+  "case_results": [
+    {
+      "case_id": "PUB-001",
+      "expected": "ADMISSIBLE_WITH_LIMITS",
+      "actual": "ADMISSIBLE_WITH_LIMITS",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 2,
+      "citation_pages": [
+        7,
+        8
+      ],
+      "ms": 46.1
+    },
+    {
+      "case_id": "PUB-002",
+      "expected": "NOT_ADMISSIBLE",
+      "actual": "NOT_ADMISSIBLE",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 1,
+      "citation_pages": [
+        9
+      ],
+      "ms": 25.7
+    },
+    {
+      "case_id": "PUB-003",
+      "expected": "NOT_ADMISSIBLE",
+      "actual": "NOT_ADMISSIBLE",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 1,
+      "citation_pages": [
+        8
+      ],
+      "ms": 24.5
+    },
+    {
+      "case_id": "PUB-004",
+      "expected": "ADMISSIBLE_WITH_LIMITS",
+      "actual": "ADMISSIBLE_WITH_LIMITS",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 2,
+      "citation_pages": [
+        2,
+        7
+      ],
+      "ms": 24.2
+    },
+    {
+      "case_id": "PUB-005",
+      "expected": "ADMISSIBLE",
+      "actual": "ADMISSIBLE",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 1,
+      "citation_pages": [
+        7
+      ],
+      "ms": 23.3
+    },
+    {
+      "case_id": "PUB-006",
+      "expected": "NEEDS_REVIEW",
+      "actual": "NEEDS_REVIEW",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 2,
+      "citation_pages": [
+        3,
+        7
+      ],
+      "ms": 28.7
+    },
+    {
+      "case_id": "PUB-007",
+      "expected": "ADMISSIBLE_WITH_LIMITS",
+      "actual": "ADMISSIBLE_WITH_LIMITS",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 2,
+      "citation_pages": [
+        7,
+        8
+      ],
+      "ms": 29.4
+    },
+    {
+      "case_id": "PUB-008",
+      "expected": "NOT_ADMISSIBLE",
+      "actual": "NOT_ADMISSIBLE",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 1,
+      "citation_pages": [
+        9
+      ],
+      "ms": 40.2
+    },
+    {
+      "case_id": "PUB-009",
+      "expected": "ADMISSIBLE",
+      "actual": "ADMISSIBLE",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 1,
+      "citation_pages": [
+        8
+      ],
+      "ms": 41.2
+    },
+    {
+      "case_id": "PUB-010",
+      "expected": "ADMISSIBLE",
+      "actual": "ADMISSIBLE",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 2,
+      "citation_pages": [
+        7,
+        9
+      ],
+      "ms": 31.5
+    },
+    {
+      "case_id": "PUB-011",
+      "expected": "NEEDS_REVIEW",
+      "actual": "NEEDS_REVIEW",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 1,
+      "citation_pages": [
+        3
+      ],
+      "ms": 31.3
+    },
+    {
+      "case_id": "PUB-012",
+      "expected": "NOT_ADMISSIBLE",
+      "actual": "NOT_ADMISSIBLE",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 1,
+      "citation_pages": [
+        9
+      ],
+      "ms": 34.7
+    },
+    {
+      "case_id": "CUSTOM-001",
+      "expected": "ADMISSIBLE",
+      "actual": "ADMISSIBLE",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 0,
+      "citation_pages": [],
+      "ms": 25.7
+    },
+    {
+      "case_id": "CUSTOM-002",
+      "expected": "NOT_ADMISSIBLE",
+      "actual": "NOT_ADMISSIBLE",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 1,
+      "citation_pages": [
+        9
+      ],
+      "ms": 23.6
+    },
+    {
+      "case_id": "CUSTOM-003",
+      "expected": "ADMISSIBLE_WITH_LIMITS",
+      "actual": "ADMISSIBLE_WITH_LIMITS",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 2,
+      "citation_pages": [
+        2,
+        7
+      ],
+      "ms": 22.8
+    },
+    {
+      "case_id": "CUSTOM-004",
+      "expected": "NEEDS_REVIEW",
+      "actual": "NEEDS_REVIEW",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 1,
+      "citation_pages": [
+        3
+      ],
+      "ms": 22.7
+    },
+    {
+      "case_id": "CUSTOM-005",
+      "expected": "ADMISSIBLE_WITH_LIMITS",
+      "actual": "ADMISSIBLE_WITH_LIMITS",
+      "correct": true,
+      "validation": "PASS",
+      "retrieval": 2,
+      "citation_pages": [
+        7,
+        8
+      ],
+      "ms": 23.1
+    }
+  ],
+  "overall_accuracy": 1.0,
+  "abstentions": [
+    "PUB-006",
+    "PUB-011",
+    "CUSTOM-004"
+  ],
+  "retrieval_metrics": {
+    "case_level_citation_hit_rate": 1.0,
+    "cases_with_expected_page_citation": 12,
+    "cases_evaluated": 12
+  }
+}

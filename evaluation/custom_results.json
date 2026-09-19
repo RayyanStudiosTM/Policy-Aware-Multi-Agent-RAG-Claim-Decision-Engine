@@ -1,0 +1,777 @@
+{
+  "generated_at_utc": "2026-09-19T05:07:24.540816+00:00",
+  "base_url": "http://127.0.0.1:8000",
+  "source_file": "C:\\Users\\shaik\\Desktop\\aptino\\aptino-claim-engine\\data\\custom_cases\\custom_test_cases.json",
+  "cases": [
+    {
+      "case_id": "CUSTOM-001",
+      "status": "OK",
+      "http_status": 200,
+      "duration_ms": 91648.17,
+      "response": {
+        "case_id": "CUSTOM-001",
+        "decision": "ADMISSIBLE_WITH_LIMITS",
+        "confidence": 0.9,
+        "key_findings": [],
+        "applicable_limits": [
+          {
+            "name": "Normal room expense",
+            "allowed_inr": 20000.0,
+            "claimed_inr": 30000.0,
+            "deduction_inr": 10000.0,
+            "basis": "1% of Basic Sum Insured per day",
+            "citation_ids": [
+              "p07-c9749b252a49"
+            ]
+          },
+          {
+            "name": "Ambulance charges",
+            "allowed_inr": 1000.0,
+            "claimed_inr": 1200.0,
+            "deduction_inr": 200.0,
+            "basis": "1% of Basic Sum Insured or Rs 1000, whichever is less",
+            "citation_ids": [
+              "p08-457a214c51ac"
+            ]
+          }
+        ],
+        "missing_evidence": [],
+        "citations": [
+          {
+            "claim": "Policy evidence used by decision",
+            "source": "USGIC-CSCIndividualHealthInsurance_2017-2018.pdf",
+            "page": 8,
+            "section": "WHAT WE EXCLUDE",
+            "chunk_id": "p08-457a214c51ac",
+            "excerpt": "4. Additional Benefits: a) An additional Daily Allowance amount equivalent to 0.1% of the Basic Sum Insured or Rs. 250/- per day whichever is less, for the duration of Hospitalization towards miscellaneous expenses. The maximum amount payable under this extensions is limited to Rs 2500/- b) Ambulance charges in connection with any admissible claim limited to 1.0% of the Basic Sum Insured or Rupees 1000/- whichever is less for each claim. Note Pre-Hospitalisation up to a maximum of 30 days immedi"
+          },
+          {
+            "claim": "Policy evidence used by decision",
+            "source": "USGIC-CSCIndividualHealthInsurance_2017-2018.pdf",
+            "page": 7,
+            "section": "5. Stroke resulting in permanent symptoms",
+            "chunk_id": "p07-c9749b252a49",
+            "excerpt": "UNIVERSAL SOMPO GENERAL INSURANCE CO LTD 7 CSC- Individual Health Insurance-Policy Wording UNIHLIP18004V011718 IRDAI Reg No:134  Human bone marrow using haematopoietic stem cells. The undergoing of a transplant has to be confirmed by a specialist Medical Practitioner Exclusion  Other stem-cell transplants  Where only islets of langerhans are transplanted 5. Stroke resulting in permanent symptoms Any cerebrovascular incident producing permanent neurological sequelae. This includes infarction o"
+          }
+        ],
+        "validation": {
+          "status": "PASS",
+          "unsupported_claims": [],
+          "revision_signal": null
+        },
+        "trace": [
+          {
+            "agent": "CaseAnalysisAgent",
+            "action": "LangGraph node: structured case analysis",
+            "duration_ms": 18328.25698000006,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "PolicyEvidenceAgent",
+            "action": "LangGraph node: hybrid retrieval + fusion + reranking",
+            "duration_ms": 18328.25698000006,
+            "retrieval_count": 18,
+            "status": "OK"
+          },
+          {
+            "agent": "CoverageExclusionAgent",
+            "action": "LangGraph node: policy coverage/exclusion analysis",
+            "duration_ms": 18328.25698000006,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "DecisionAgent",
+            "action": "LangGraph node: structured decision",
+            "duration_ms": 18328.25698000006,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "ValidationAgent",
+            "action": "Checked material findings and limits for policy citations",
+            "duration_ms": 0.007900000127847306,
+            "retrieval_count": 0,
+            "status": "PASS"
+          }
+        ],
+        "payable_estimate_inr": 153000.0
+      }
+    },
+    {
+      "case_id": "CUSTOM-002",
+      "status": "OK",
+      "http_status": 200,
+      "duration_ms": 75686.55,
+      "response": {
+        "case_id": "CUSTOM-002",
+        "decision": "ADMISSIBLE",
+        "confidence": 0.9,
+        "key_findings": [],
+        "applicable_limits": [],
+        "missing_evidence": [],
+        "citations": [],
+        "validation": {
+          "status": "PASS",
+          "unsupported_claims": [],
+          "revision_signal": null
+        },
+        "trace": [
+          {
+            "agent": "CaseAnalysisAgent",
+            "action": "LangGraph node: structured case analysis",
+            "duration_ms": 15135.803559999931,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "PolicyEvidenceAgent",
+            "action": "LangGraph node: hybrid retrieval + fusion + reranking",
+            "duration_ms": 15135.803559999931,
+            "retrieval_count": 17,
+            "status": "OK"
+          },
+          {
+            "agent": "CoverageExclusionAgent",
+            "action": "LangGraph node: policy coverage/exclusion analysis",
+            "duration_ms": 15135.803559999931,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "DecisionAgent",
+            "action": "LangGraph node: structured decision",
+            "duration_ms": 15135.803559999931,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "ValidationAgent",
+            "action": "Checked material findings and limits for policy citations",
+            "duration_ms": 0.005299999884300632,
+            "retrieval_count": 0,
+            "status": "PASS"
+          }
+        ],
+        "payable_estimate_inr": 89800.0
+      }
+    },
+    {
+      "case_id": "CUSTOM-003",
+      "status": "OK",
+      "http_status": 200,
+      "duration_ms": 73192.63,
+      "response": {
+        "case_id": "CUSTOM-003",
+        "decision": "ADMISSIBLE_WITH_LIMITS",
+        "confidence": 0.9,
+        "key_findings": [],
+        "applicable_limits": [
+          {
+            "name": "Normal room expense",
+            "allowed_inr": 10000.0,
+            "claimed_inr": 15000.0,
+            "deduction_inr": 5000.0,
+            "basis": "1% of Basic Sum Insured per day",
+            "citation_ids": [
+              "p07-c9749b252a49"
+            ]
+          }
+        ],
+        "missing_evidence": [],
+        "citations": [
+          {
+            "claim": "Policy evidence used by decision",
+            "source": "USGIC-CSCIndividualHealthInsurance_2017-2018.pdf",
+            "page": 7,
+            "section": "5. Stroke resulting in permanent symptoms",
+            "chunk_id": "p07-c9749b252a49",
+            "excerpt": "UNIVERSAL SOMPO GENERAL INSURANCE CO LTD 7 CSC- Individual Health Insurance-Policy Wording UNIHLIP18004V011718 IRDAI Reg No:134  Human bone marrow using haematopoietic stem cells. The undergoing of a transplant has to be confirmed by a specialist Medical Practitioner Exclusion  Other stem-cell transplants  Where only islets of langerhans are transplanted 5. Stroke resulting in permanent symptoms Any cerebrovascular incident producing permanent neurological sequelae. This includes infarction o"
+          }
+        ],
+        "validation": {
+          "status": "PASS",
+          "unsupported_claims": [],
+          "revision_signal": null
+        },
+        "trace": [
+          {
+            "agent": "CaseAnalysisAgent",
+            "action": "LangGraph node: structured case analysis",
+            "duration_ms": 14636.680640000031,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "PolicyEvidenceAgent",
+            "action": "LangGraph node: hybrid retrieval + fusion + reranking",
+            "duration_ms": 14636.680640000031,
+            "retrieval_count": 18,
+            "status": "OK"
+          },
+          {
+            "agent": "CoverageExclusionAgent",
+            "action": "LangGraph node: policy coverage/exclusion analysis",
+            "duration_ms": 14636.680640000031,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "DecisionAgent",
+            "action": "LangGraph node: structured decision",
+            "duration_ms": 14636.680640000031,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "ValidationAgent",
+            "action": "Checked material findings and limits for policy citations",
+            "duration_ms": 0.0064000000747910235,
+            "retrieval_count": 0,
+            "status": "PASS"
+          }
+        ],
+        "payable_estimate_inr": 63000.0
+      }
+    },
+    {
+      "case_id": "CUSTOM-004",
+      "status": "OK",
+      "http_status": 200,
+      "duration_ms": 74316.71,
+      "response": {
+        "case_id": "CUSTOM-004",
+        "decision": "NOT_ADMISSIBLE",
+        "confidence": 0.99,
+        "key_findings": [
+          {
+            "dimension": "exclusion",
+            "conclusion": "The supplied facts classify the treatment as experimental; the policy excludes unproven/experimental treatment.",
+            "material": true,
+            "citation_ids": [
+              "p09-dbf9222fc696"
+            ]
+          }
+        ],
+        "applicable_limits": [],
+        "missing_evidence": [],
+        "citations": [
+          {
+            "claim": "Policy evidence used by decision",
+            "source": "USGIC-CSCIndividualHealthInsurance_2017-2018.pdf",
+            "page": 9,
+            "section": "2. 30 days Waiting Period",
+            "chunk_id": "p09-dbf9222fc696",
+            "excerpt": "4. Injury or Illnesses directly or indirectly caused by or arising from or attributable to War, invasion, riot, strike, terrorism, act of foreign enemy, War like operation (whether War be declared or not). 5. Circumcision unless necessary for the treatment of an Illness not otherwise excluded or required as a result of accidental bodily injury; vaccination, inoculation, cosmetic or aesthetic treatment of any description(including any complications arising thereof), plastic surgery except those r"
+          }
+        ],
+        "validation": {
+          "status": "PASS",
+          "unsupported_claims": [],
+          "revision_signal": null
+        },
+        "trace": [
+          {
+            "agent": "CaseAnalysisAgent",
+            "action": "LangGraph node: structured case analysis",
+            "duration_ms": 14862.066979999963,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "PolicyEvidenceAgent",
+            "action": "LangGraph node: hybrid retrieval + fusion + reranking",
+            "duration_ms": 14862.066979999963,
+            "retrieval_count": 17,
+            "status": "OK"
+          },
+          {
+            "agent": "CoverageExclusionAgent",
+            "action": "LangGraph node: policy coverage/exclusion analysis",
+            "duration_ms": 14862.066979999963,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "DecisionAgent",
+            "action": "LangGraph node: structured decision",
+            "duration_ms": 14862.066979999963,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "ValidationAgent",
+            "action": "Checked material findings and limits for policy citations",
+            "duration_ms": 0.006100000064179767,
+            "retrieval_count": 0,
+            "status": "PASS"
+          }
+        ],
+        "payable_estimate_inr": 0.0
+      }
+    },
+    {
+      "case_id": "CUSTOM-005",
+      "status": "OK",
+      "http_status": 200,
+      "duration_ms": 70508.63,
+      "response": {
+        "case_id": "CUSTOM-005",
+        "decision": "NOT_ADMISSIBLE",
+        "confidence": 0.99,
+        "key_findings": [
+          {
+            "dimension": "pre-existing disease",
+            "conclusion": "Pre-existing disease remains within the policy waiting period; 48 months remain after applicable prior-coverage reduction.",
+            "material": true,
+            "citation_ids": [
+              "p08-457a214c51ac"
+            ]
+          }
+        ],
+        "applicable_limits": [],
+        "missing_evidence": [],
+        "citations": [
+          {
+            "claim": "Policy evidence used by decision",
+            "source": "USGIC-CSCIndividualHealthInsurance_2017-2018.pdf",
+            "page": 8,
+            "section": "WHAT WE EXCLUDE",
+            "chunk_id": "p08-457a214c51ac",
+            "excerpt": "4. Additional Benefits: a) An additional Daily Allowance amount equivalent to 0.1% of the Basic Sum Insured or Rs. 250/- per day whichever is less, for the duration of Hospitalization towards miscellaneous expenses. The maximum amount payable under this extensions is limited to Rs 2500/- b) Ambulance charges in connection with any admissible claim limited to 1.0% of the Basic Sum Insured or Rupees 1000/- whichever is less for each claim. Note Pre-Hospitalisation up to a maximum of 30 days immedi"
+          }
+        ],
+        "validation": {
+          "status": "PASS",
+          "unsupported_claims": [],
+          "revision_signal": null
+        },
+        "trace": [
+          {
+            "agent": "CaseAnalysisAgent",
+            "action": "LangGraph node: structured case analysis",
+            "duration_ms": 14100.679719999971,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "PolicyEvidenceAgent",
+            "action": "LangGraph node: hybrid retrieval + fusion + reranking",
+            "duration_ms": 14100.679719999971,
+            "retrieval_count": 17,
+            "status": "OK"
+          },
+          {
+            "agent": "CoverageExclusionAgent",
+            "action": "LangGraph node: policy coverage/exclusion analysis",
+            "duration_ms": 14100.679719999971,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "DecisionAgent",
+            "action": "LangGraph node: structured decision",
+            "duration_ms": 14100.679719999971,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "ValidationAgent",
+            "action": "Checked material findings and limits for policy citations",
+            "duration_ms": 0.007199999799922807,
+            "retrieval_count": 0,
+            "status": "PASS"
+          }
+        ],
+        "payable_estimate_inr": 0.0
+      }
+    },
+    {
+      "case_id": "CUSTOM-006",
+      "status": "OK",
+      "http_status": 200,
+      "duration_ms": 70034.08,
+      "response": {
+        "case_id": "CUSTOM-006",
+        "decision": "NEEDS_REVIEW",
+        "confidence": 0.96,
+        "key_findings": [
+          {
+            "dimension": "day-care treatment",
+            "conclusion": "Less-than-24-hour treatment requires the policy conditions for a waiver/day-care treatment to be established.",
+            "material": true,
+            "citation_ids": [
+              "p07-c9749b252a49"
+            ]
+          }
+        ],
+        "applicable_limits": [],
+        "missing_evidence": [
+          "Evidence of the policy conditions permitting less-than-24-hour treatment is required."
+        ],
+        "citations": [
+          {
+            "claim": "Policy evidence used by decision",
+            "source": "USGIC-CSCIndividualHealthInsurance_2017-2018.pdf",
+            "page": 7,
+            "section": "5. Stroke resulting in permanent symptoms",
+            "chunk_id": "p07-c9749b252a49",
+            "excerpt": "UNIVERSAL SOMPO GENERAL INSURANCE CO LTD 7 CSC- Individual Health Insurance-Policy Wording UNIHLIP18004V011718 IRDAI Reg No:134  Human bone marrow using haematopoietic stem cells. The undergoing of a transplant has to be confirmed by a specialist Medical Practitioner Exclusion  Other stem-cell transplants  Where only islets of langerhans are transplanted 5. Stroke resulting in permanent symptoms Any cerebrovascular incident producing permanent neurological sequelae. This includes infarction o"
+          }
+        ],
+        "validation": {
+          "status": "PASS",
+          "unsupported_claims": [],
+          "revision_signal": null
+        },
+        "trace": [
+          {
+            "agent": "CaseAnalysisAgent",
+            "action": "LangGraph node: structured case analysis",
+            "duration_ms": 14005.706819999978,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "PolicyEvidenceAgent",
+            "action": "LangGraph node: hybrid retrieval + fusion + reranking",
+            "duration_ms": 14005.706819999978,
+            "retrieval_count": 18,
+            "status": "OK"
+          },
+          {
+            "agent": "CoverageExclusionAgent",
+            "action": "LangGraph node: policy coverage/exclusion analysis",
+            "duration_ms": 14005.706819999978,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "DecisionAgent",
+            "action": "LangGraph node: structured decision",
+            "duration_ms": 14005.706819999978,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "ValidationAgent",
+            "action": "Checked material findings and limits for policy citations",
+            "duration_ms": 0.006499999926745659,
+            "retrieval_count": 0,
+            "status": "PASS"
+          }
+        ],
+        "payable_estimate_inr": null
+      }
+    },
+    {
+      "case_id": "CUSTOM-007",
+      "status": "OK",
+      "http_status": 200,
+      "duration_ms": 69637.2,
+      "response": {
+        "case_id": "CUSTOM-007",
+        "decision": "ADMISSIBLE_WITH_LIMITS",
+        "confidence": 0.9,
+        "key_findings": [],
+        "applicable_limits": [
+          {
+            "name": "Normal room expense",
+            "allowed_inr": 5000.0,
+            "claimed_inr": 20000.0,
+            "deduction_inr": 15000.0,
+            "basis": "1% of Basic Sum Insured per day",
+            "citation_ids": [
+              "p07-c9749b252a49"
+            ]
+          }
+        ],
+        "missing_evidence": [],
+        "citations": [
+          {
+            "claim": "Policy evidence used by decision",
+            "source": "USGIC-CSCIndividualHealthInsurance_2017-2018.pdf",
+            "page": 7,
+            "section": "5. Stroke resulting in permanent symptoms",
+            "chunk_id": "p07-c9749b252a49",
+            "excerpt": "UNIVERSAL SOMPO GENERAL INSURANCE CO LTD 7 CSC- Individual Health Insurance-Policy Wording UNIHLIP18004V011718 IRDAI Reg No:134  Human bone marrow using haematopoietic stem cells. The undergoing of a transplant has to be confirmed by a specialist Medical Practitioner Exclusion  Other stem-cell transplants  Where only islets of langerhans are transplanted 5. Stroke resulting in permanent symptoms Any cerebrovascular incident producing permanent neurological sequelae. This includes infarction o"
+          }
+        ],
+        "validation": {
+          "status": "PASS",
+          "unsupported_claims": [],
+          "revision_signal": null
+        },
+        "trace": [
+          {
+            "agent": "CaseAnalysisAgent",
+            "action": "LangGraph node: structured case analysis",
+            "duration_ms": 13926.316640000005,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "PolicyEvidenceAgent",
+            "action": "LangGraph node: hybrid retrieval + fusion + reranking",
+            "duration_ms": 13926.316640000005,
+            "retrieval_count": 18,
+            "status": "OK"
+          },
+          {
+            "agent": "CoverageExclusionAgent",
+            "action": "LangGraph node: policy coverage/exclusion analysis",
+            "duration_ms": 13926.316640000005,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "DecisionAgent",
+            "action": "LangGraph node: structured decision",
+            "duration_ms": 13926.316640000005,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "ValidationAgent",
+            "action": "Checked material findings and limits for policy citations",
+            "duration_ms": 0.006999999641266186,
+            "retrieval_count": 0,
+            "status": "PASS"
+          }
+        ],
+        "payable_estimate_inr": 135000.0
+      }
+    },
+    {
+      "case_id": "CUSTOM-008",
+      "status": "OK",
+      "http_status": 200,
+      "duration_ms": 69400.35,
+      "response": {
+        "case_id": "CUSTOM-008",
+        "decision": "ADMISSIBLE",
+        "confidence": 0.9,
+        "key_findings": [],
+        "applicable_limits": [],
+        "missing_evidence": [],
+        "citations": [],
+        "validation": {
+          "status": "PASS",
+          "unsupported_claims": [],
+          "revision_signal": null
+        },
+        "trace": [
+          {
+            "agent": "CaseAnalysisAgent",
+            "action": "LangGraph node: structured case analysis",
+            "duration_ms": 13878.745640000034,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "PolicyEvidenceAgent",
+            "action": "LangGraph node: hybrid retrieval + fusion + reranking",
+            "duration_ms": 13878.745640000034,
+            "retrieval_count": 18,
+            "status": "OK"
+          },
+          {
+            "agent": "CoverageExclusionAgent",
+            "action": "LangGraph node: policy coverage/exclusion analysis",
+            "duration_ms": 13878.745640000034,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "DecisionAgent",
+            "action": "LangGraph node: structured decision",
+            "duration_ms": 13878.745640000034,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "ValidationAgent",
+            "action": "Checked material findings and limits for policy citations",
+            "duration_ms": 0.004699999863078119,
+            "retrieval_count": 0,
+            "status": "PASS"
+          }
+        ],
+        "payable_estimate_inr": 112900.0
+      }
+    },
+    {
+      "case_id": "CUSTOM-009",
+      "status": "OK",
+      "http_status": 200,
+      "duration_ms": 296159.36,
+      "response": {
+        "case_id": "CUSTOM-009",
+        "decision": "ADMISSIBLE",
+        "confidence": 0.9,
+        "key_findings": [],
+        "applicable_limits": [],
+        "missing_evidence": [],
+        "citations": [],
+        "validation": {
+          "status": "PASS",
+          "unsupported_claims": [],
+          "revision_signal": null
+        },
+        "trace": [
+          {
+            "agent": "CaseAnalysisAgent",
+            "action": "LangGraph node: structured case analysis",
+            "duration_ms": 59230.79707999995,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "PolicyEvidenceAgent",
+            "action": "LangGraph node: hybrid retrieval + fusion + reranking",
+            "duration_ms": 59230.79707999995,
+            "retrieval_count": 18,
+            "status": "OK"
+          },
+          {
+            "agent": "CoverageExclusionAgent",
+            "action": "LangGraph node: policy coverage/exclusion analysis",
+            "duration_ms": 59230.79707999995,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "DecisionAgent",
+            "action": "LangGraph node: structured decision",
+            "duration_ms": 59230.79707999995,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "ValidationAgent",
+            "action": "Checked material findings and limits for policy citations",
+            "duration_ms": 0.003999999989900971,
+            "retrieval_count": 0,
+            "status": "PASS"
+          }
+        ],
+        "payable_estimate_inr": 40000.0
+      }
+    },
+    {
+      "case_id": "CUSTOM-010",
+      "status": "OK",
+      "http_status": 200,
+      "duration_ms": 69203.54,
+      "response": {
+        "case_id": "CUSTOM-010",
+        "decision": "ADMISSIBLE_WITH_LIMITS",
+        "confidence": 0.9,
+        "key_findings": [],
+        "applicable_limits": [
+          {
+            "name": "Normal room expense",
+            "allowed_inr": 15000.0,
+            "claimed_inr": 50000.0,
+            "deduction_inr": 35000.0,
+            "basis": "1% of Basic Sum Insured per day",
+            "citation_ids": [
+              "p07-c9749b252a49"
+            ]
+          },
+          {
+            "name": "Ambulance charges",
+            "allowed_inr": 1000.0,
+            "claimed_inr": 2000.0,
+            "deduction_inr": 1000.0,
+            "basis": "1% of Basic Sum Insured or Rs 1000, whichever is less",
+            "citation_ids": [
+              "p08-457a214c51ac"
+            ]
+          }
+        ],
+        "missing_evidence": [],
+        "citations": [
+          {
+            "claim": "Policy evidence used by decision",
+            "source": "USGIC-CSCIndividualHealthInsurance_2017-2018.pdf",
+            "page": 8,
+            "section": "WHAT WE EXCLUDE",
+            "chunk_id": "p08-457a214c51ac",
+            "excerpt": "4. Additional Benefits: a) An additional Daily Allowance amount equivalent to 0.1% of the Basic Sum Insured or Rs. 250/- per day whichever is less, for the duration of Hospitalization towards miscellaneous expenses. The maximum amount payable under this extensions is limited to Rs 2500/- b) Ambulance charges in connection with any admissible claim limited to 1.0% of the Basic Sum Insured or Rupees 1000/- whichever is less for each claim. Note Pre-Hospitalisation up to a maximum of 30 days immedi"
+          },
+          {
+            "claim": "Policy evidence used by decision",
+            "source": "USGIC-CSCIndividualHealthInsurance_2017-2018.pdf",
+            "page": 7,
+            "section": "5. Stroke resulting in permanent symptoms",
+            "chunk_id": "p07-c9749b252a49",
+            "excerpt": "UNIVERSAL SOMPO GENERAL INSURANCE CO LTD 7 CSC- Individual Health Insurance-Policy Wording UNIHLIP18004V011718 IRDAI Reg No:134  Human bone marrow using haematopoietic stem cells. The undergoing of a transplant has to be confirmed by a specialist Medical Practitioner Exclusion  Other stem-cell transplants  Where only islets of langerhans are transplanted 5. Stroke resulting in permanent symptoms Any cerebrovascular incident producing permanent neurological sequelae. This includes infarction o"
+          }
+        ],
+        "validation": {
+          "status": "PASS",
+          "unsupported_claims": [],
+          "revision_signal": null
+        },
+        "trace": [
+          {
+            "agent": "CaseAnalysisAgent",
+            "action": "LangGraph node: structured case analysis",
+            "duration_ms": 13839.521779999995,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "PolicyEvidenceAgent",
+            "action": "LangGraph node: hybrid retrieval + fusion + reranking",
+            "duration_ms": 13839.521779999995,
+            "retrieval_count": 18,
+            "status": "OK"
+          },
+          {
+            "agent": "CoverageExclusionAgent",
+            "action": "LangGraph node: policy coverage/exclusion analysis",
+            "duration_ms": 13839.521779999995,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "DecisionAgent",
+            "action": "LangGraph node: structured decision",
+            "duration_ms": 13839.521779999995,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "ValidationAgent",
+            "action": "Checked material findings and limits for policy citations",
+            "duration_ms": 0.007099999947968172,
+            "retrieval_count": 0,
+            "status": "PASS"
+          }
+        ],
+        "payable_estimate_inr": 176000.0
+      }
+    }
+  ],
+  "summary": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0,
+    "decisions": {
+      "ADMISSIBLE_WITH_LIMITS": 4,
+      "ADMISSIBLE": 3,
+      "NOT_ADMISSIBLE": 2,
+      "NEEDS_REVIEW": 1
+    },
+    "validation": {
+      "PASS": 10
+    },
+    "needs_review_cases": [
+      "CUSTOM-006"
+    ],
+    "average_duration_ms": 95978.72
+  }
+}

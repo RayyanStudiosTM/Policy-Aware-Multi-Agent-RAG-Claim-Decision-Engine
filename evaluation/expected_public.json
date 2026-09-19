@@ -1,0 +1,14 @@
+{
+  "PUB-001": {"expected":"ADMISSIBLE_WITH_LIMITS","reason":"Ordinary hospitalization is covered; room, ambulance and other category limits affect payable amount."},
+  "PUB-002": {"expected":"NOT_ADMISSIBLE","reason":"Claim occurs within 30-day initial waiting period without continuity evidence."},
+  "PUB-003": {"expected":"NOT_ADMISSIBLE","reason":"Pre-existing disease remains inside 48-month waiting period; no prior-insurer continuity credit is supplied."},
+  "PUB-004": {"expected":"ADMISSIBLE_WITH_LIMITS","reason":"Domiciliary condition is met because room was unavailable; aggregate domiciliary limit is 20% of Basic Sum Insured."},
+  "PUB-005": {"expected":"ADMISSIBLE","reason":"Eye surgery is expressly listed for less-than-24-hour/day-care treatment and policy first-year waiting period has elapsed."},
+  "PUB-006": {"expected":"NEEDS_REVIEW","reason":"Hospital definition/registration and medical necessity are unresolved in supplied evidence."},
+  "PUB-007": {"expected":"ADMISSIBLE_WITH_LIMITS","reason":"Hospitalization is covered but room, professional fees, medicines/diagnostics and ambulance are subject to stated caps."},
+  "PUB-008": {"expected":"NOT_ADMISSIBLE","reason":"Cosmetic/aesthetic treatment is excluded."},
+  "PUB-009": {"expected":"ADMISSIBLE","reason":"Pre- and post-hospitalization evidence is exactly within the 30/60-day windows."},
+  "PUB-010": {"expected":"ADMISSIBLE","reason":"Cataract first-year waiting period is waived after one completed year of continuous prior Indian individual health coverage and claim-history evidence is supplied."},
+  "PUB-011": {"expected":"NEEDS_REVIEW","reason":"Facility evidence does not establish the policy definition of Hospital."},
+  "PUB-012": {"expected":"NOT_ADMISSIBLE","reason":"Experimental/unproven treatment is excluded."}
+}

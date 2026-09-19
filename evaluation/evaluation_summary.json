@@ -1,0 +1,45 @@
+{
+  "generated_at_utc": "2026-09-19T05:07:24.540816+00:00",
+  "base_url": "http://127.0.0.1:8000",
+  "public": {
+    "total": 12,
+    "successful": 11,
+    "failed": 1,
+    "decisions": {
+      "ADMISSIBLE_WITH_LIMITS": 3,
+      "NOT_ADMISSIBLE": 4,
+      "ADMISSIBLE": 2,
+      "NEEDS_REVIEW": 2
+    },
+    "validation": {
+      "PASS": 11
+    },
+    "needs_review_cases": [
+      "PUB-006",
+      "PUB-011"
+    ],
+    "average_duration_ms": 84618.38
+  },
+  "custom": {
+    "total": 10,
+    "successful": 10,
+    "failed": 0,
+    "decisions": {
+      "ADMISSIBLE_WITH_LIMITS": 4,
+      "ADMISSIBLE": 3,
+      "NOT_ADMISSIBLE": 2,
+      "NEEDS_REVIEW": 1
+    },
+    "validation": {
+      "PASS": 10
+    },
+    "needs_review_cases": [
+      "CUSTOM-006"
+    ],
+    "average_duration_ms": 95978.72
+  },
+  "total_cases": 22,
+  "total_successful": 21,
+  "total_failed": 1,
+  "total_needs_review": 3
+}

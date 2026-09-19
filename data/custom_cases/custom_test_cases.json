@@ -1,0 +1,399 @@
+[
+  {
+    "case_id": "CUSTOM-001",
+    "policy_id": "USGIC-CSC-2017-2018",
+    "policy_start_date": "2025-01-01",
+    "claim_date": "2026-03-20",
+    "sum_insured_inr": 500000,
+    "continuous_coverage_months": 14,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 34
+    },
+    "hospital": {
+      "name": "Sunrise Multispeciality",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 96,
+      "diagnosis": "Acute appendicitis",
+      "procedure": "Appendectomy",
+      "pre_existing": false,
+      "experimental": false
+    },
+    "expenses_inr": {
+      "room": 30000,
+      "doctor_fees": 30000,
+      "medicines_diagnostics": 90000,
+      "pre_hospitalization": 5000,
+      "post_hospitalization": 7000,
+      "ambulance": 1200
+    },
+    "documents": [
+      "claim_form",
+      "discharge_summary",
+      "itemized_bill",
+      "doctor_prescription"
+    ],
+    "task": "Determine admissibility and identify applicable policy limits and deductions.",
+    "test_focus": "Known sub-limit scenario; verify room and ambulance limits are retrieved and cited."
+  },
+  {
+    "case_id": "CUSTOM-002",
+    "policy_id": "USGIC-CSC-2017-2018",
+    "policy_start_date": "2025-01-01",
+    "claim_date": "2026-04-10",
+    "sum_insured_inr": 500000,
+    "continuous_coverage_months": 3,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 41
+    },
+    "hospital": {
+      "name": "City Care Hospital",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 72,
+      "diagnosis": "Condition requiring hospitalization",
+      "procedure": "Hospital treatment",
+      "pre_existing": false,
+      "experimental": false
+    },
+    "expenses_inr": {
+      "room": 12000,
+      "doctor_fees": 25000,
+      "medicines_diagnostics": 45000,
+      "pre_hospitalization": 3000,
+      "post_hospitalization": 4000,
+      "ambulance": 800
+    },
+    "documents": [
+      "claim_form",
+      "discharge_summary",
+      "itemized_bill"
+    ],
+    "task": "Determine whether the claim is admissible considering the coverage duration and any applicable waiting-period provisions.",
+    "test_focus": "Waiting-period scenario."
+  },
+  {
+    "case_id": "CUSTOM-003",
+    "policy_id": "USGIC-CSC-2017-2018",
+    "policy_start_date": "2025-01-01",
+    "claim_date": "2026-05-05",
+    "sum_insured_inr": 500000,
+    "continuous_coverage_months": 16,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 52
+    },
+    "hospital": {
+      "name": "Metro Hospital",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 48,
+      "diagnosis": "Condition with incomplete documentation",
+      "procedure": "Hospital treatment",
+      "pre_existing": false,
+      "experimental": false
+    },
+    "expenses_inr": {
+      "room": 15000,
+      "doctor_fees": 18000,
+      "medicines_diagnostics": 35000,
+      "pre_hospitalization": 0,
+      "post_hospitalization": 0,
+      "ambulance": 0
+    },
+    "documents": [
+      "claim_form"
+    ],
+    "task": "Determine whether the claim can be conclusively adjudicated using the available claim information and supplied policy.",
+    "test_focus": "Insufficient evidence; expected behavior should be NEEDS_REVIEW if policy/claim evidence cannot support a conclusion."
+  },
+  {
+    "case_id": "CUSTOM-004",
+    "policy_id": "USGIC-CSC-2017-2018",
+    "policy_start_date": "2025-01-01",
+    "claim_date": "2026-06-12",
+    "sum_insured_inr": 1000000,
+    "continuous_coverage_months": 24,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 29
+    },
+    "hospital": {
+      "name": "Advanced Care Hospital",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 120,
+      "diagnosis": "Condition requiring treatment",
+      "procedure": "Specialized procedure",
+      "pre_existing": false,
+      "experimental": true
+    },
+    "expenses_inr": {
+      "room": 25000,
+      "doctor_fees": 60000,
+      "medicines_diagnostics": 125000,
+      "pre_hospitalization": 5000,
+      "post_hospitalization": 5000,
+      "ambulance": 1000
+    },
+    "documents": [
+      "claim_form",
+      "discharge_summary",
+      "itemized_bill",
+      "doctor_prescription",
+      "procedure_report"
+    ],
+    "task": "Determine whether the treatment is admissible and identify any exclusion or limitation that applies.",
+    "test_focus": "Exclusion scenario; verify that experimental-treatment language is grounded in the supplied policy."
+  },
+  {
+    "case_id": "CUSTOM-005",
+    "policy_id": "USGIC-CSC-2017-2018",
+    "policy_start_date": "2025-01-01",
+    "claim_date": "2026-07-01",
+    "sum_insured_inr": 300000,
+    "continuous_coverage_months": 20,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 47
+    },
+    "hospital": {
+      "name": "General Hospital",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 60,
+      "diagnosis": "Medical condition",
+      "procedure": "Hospital treatment",
+      "pre_existing": true,
+      "experimental": false
+    },
+    "expenses_inr": {
+      "room": 10000,
+      "doctor_fees": 15000,
+      "medicines_diagnostics": 30000,
+      "pre_hospitalization": 2000,
+      "post_hospitalization": 3000,
+      "ambulance": 500
+    },
+    "documents": [
+      "claim_form",
+      "discharge_summary",
+      "itemized_bill",
+      "doctor_prescription"
+    ],
+    "task": "Determine whether the claim is admissible considering the pre-existing condition information and applicable policy provisions.",
+    "test_focus": "Pre-existing-condition scenario; verify relevant exclusion/waiting-period evidence."
+  },
+  {
+    "case_id": "CUSTOM-006",
+    "policy_id": "USGIC-CSC-2017-2018",
+    "policy_start_date": "2025-01-01",
+    "claim_date": "2026-07-15",
+    "sum_insured_inr": 500000,
+    "continuous_coverage_months": 18,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 36
+    },
+    "hospital": {
+      "name": "Unknown Hospital",
+      "network_provider": false
+    },
+    "treatment": {
+      "type": "outpatient",
+      "admission_hours": 0,
+      "diagnosis": "Minor illness",
+      "procedure": "Consultation",
+      "pre_existing": false,
+      "experimental": false
+    },
+    "expenses_inr": {
+      "room": 0,
+      "doctor_fees": 2500,
+      "medicines_diagnostics": 3000,
+      "pre_hospitalization": 0,
+      "post_hospitalization": 0,
+      "ambulance": 0
+    },
+    "documents": [
+      "claim_form",
+      "prescription"
+    ],
+    "task": "Determine whether this outpatient claim is covered by the supplied policy.",
+    "test_focus": "Coverage boundary scenario; verify that the decision is based on policy evidence rather than assumptions."
+  },
+  {
+    "case_id": "CUSTOM-007",
+    "policy_id": "USGIC-CSC-2017-2018",
+    "policy_start_date": "2025-01-01",
+    "claim_date": "2026-08-01",
+    "sum_insured_inr": 500000,
+    "continuous_coverage_months": 18,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 62
+    },
+    "hospital": {
+      "name": "Specialist Hospital",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 24,
+      "diagnosis": "Complex condition",
+      "procedure": "Specialized treatment",
+      "pre_existing": false,
+      "experimental": false
+    },
+    "expenses_inr": {
+      "room": 20000,
+      "doctor_fees": 50000,
+      "medicines_diagnostics": 80000,
+      "pre_hospitalization": 0,
+      "post_hospitalization": 0,
+      "ambulance": 0
+    },
+    "documents": [
+      "claim_form",
+      "discharge_summary",
+      "itemized_bill"
+    ],
+    "task": "Determine the admissibility of the claim when the policy applicability depends on more than one section of the policy.",
+    "test_focus": "Multi-section retrieval scenario."
+  },
+  {
+    "case_id": "CUSTOM-008",
+    "policy_id": "USGIC-CSC-2017-2018",
+    "policy_start_date": "2025-01-01",
+    "claim_date": "2026-08-20",
+    "sum_insured_inr": 500000,
+    "continuous_coverage_months": 18,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 38
+    },
+    "hospital": {
+      "name": "Sunrise Multispeciality",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 96,
+      "diagnosis": "Acute appendicitis",
+      "procedure": "Appendectomy",
+      "pre_existing": false,
+      "experimental": false
+    },
+    "expenses_inr": {
+      "room": 18000,
+      "doctor_fees": 25000,
+      "medicines_diagnostics": 60000,
+      "pre_hospitalization": 4000,
+      "post_hospitalization": 5000,
+      "ambulance": 900
+    },
+    "documents": [
+      "claim_form",
+      "discharge_summary",
+      "itemized_bill",
+      "doctor_prescription"
+    ],
+    "task": "Determine admissibility and identify whether any irrelevant claim attributes should affect the decision.",
+    "extra_attributes": {
+      "favorite_color": "blue",
+      "occupation": "software_developer",
+      "travel_distance_km": 17
+    },
+    "test_focus": "Irrelevant-attribute robustness."
+  },
+  {
+    "case_id": "CUSTOM-009",
+    "policy_id": "USGIC-CSC-2017-2018",
+    "policy_start_date": "2025-01-01",
+    "claim_date": "2026-08-25",
+    "sum_insured_inr": 500000,
+    "continuous_coverage_months": 18,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 45
+    },
+    "hospital": {
+      "name": "City Care Hospital",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 36,
+      "diagnosis": "Unspecified condition",
+      "procedure": "Treatment not specified",
+      "pre_existing": null,
+      "experimental": null
+    },
+    "expenses_inr": {
+      "room": 10000,
+      "doctor_fees": 10000,
+      "medicines_diagnostics": 20000,
+      "pre_hospitalization": 0,
+      "post_hospitalization": 0,
+      "ambulance": 0
+    },
+    "documents": [
+      "claim_form",
+      "itemized_bill"
+    ],
+    "task": "Determine whether a reliable policy-grounded decision can be made from the uncertain treatment and condition information.",
+    "test_focus": "Uncertain-condition scenario; expected behavior may be NEEDS_REVIEW."
+  },
+  {
+    "case_id": "CUSTOM-010",
+    "policy_id": "USGIC-CSC-2017-2018",
+    "policy_start_date": "2025-01-01",
+    "claim_date": "2026-08-30",
+    "sum_insured_inr": 500000,
+    "continuous_coverage_months": 18,
+    "prior_insurer_continuous_years": 0,
+    "patient": {
+      "age": 50
+    },
+    "hospital": {
+      "name": "Metro Hospital",
+      "network_provider": true
+    },
+    "treatment": {
+      "type": "inpatient",
+      "admission_hours": 72,
+      "diagnosis": "Condition requiring hospitalization",
+      "procedure": "Hospital treatment",
+      "pre_existing": false,
+      "experimental": false
+    },
+    "expenses_inr": {
+      "room": 50000,
+      "doctor_fees": 40000,
+      "medicines_diagnostics": 100000,
+      "pre_hospitalization": 10000,
+      "post_hospitalization": 10000,
+      "ambulance": 2000
+    },
+    "documents": [
+      "claim_form",
+      "discharge_summary",
+      "itemized_bill",
+      "doctor_prescription"
+    ],
+    "task": "Identify all applicable policy limits and calculate deductions only where the supplied policy explicitly supports them.",
+    "test_focus": "Multiple-limit / numerical-reasoning scenario."
+  }
+]
