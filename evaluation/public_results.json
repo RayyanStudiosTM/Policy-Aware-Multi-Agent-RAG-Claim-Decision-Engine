@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-19T05:07:24.540816+00:00",
+  "generated_at_utc": "2026-09-19T05:44:29.307337+00:00",
   "base_url": "http://127.0.0.1:8000",
   "source_file": "C:\\Users\\shaik\\Desktop\\aptino\\aptino-claim-engine\\data\\public_cases\\public_test_cases.json",
   "cases": [
@@ -7,7 +7,7 @@
       "case_id": "PUB-001",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 77829.29,
+      "duration_ms": 73377.93,
       "response": {
         "case_id": "PUB-001",
         "decision": "ADMISSIBLE_WITH_LIMITS",
@@ -63,35 +63,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 15355.016840000008,
+            "duration_ms": 14674.448339999979,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 15355.016840000008,
+            "duration_ms": 14674.448339999979,
             "retrieval_count": 18,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 15355.016840000008,
+            "duration_ms": 14674.448339999979,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 15355.016840000008,
+            "duration_ms": 14674.448339999979,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.40659999990566575,
+            "duration_ms": 0.006900000698806252,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -103,7 +103,7 @@
       "case_id": "PUB-002",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 73315.13,
+      "duration_ms": 73909.73,
       "response": {
         "case_id": "PUB-002",
         "decision": "NOT_ADMISSIBLE",
@@ -139,35 +139,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 14661.900119999973,
+            "duration_ms": 14780.705859999944,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 14661.900119999973,
+            "duration_ms": 14780.705859999944,
             "retrieval_count": 17,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 14661.900119999973,
+            "duration_ms": 14780.705859999944,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 14661.900119999973,
+            "duration_ms": 14780.705859999944,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.008499999921696144,
+            "duration_ms": 0.008199999683711212,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -179,7 +179,7 @@
       "case_id": "PUB-003",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 74886.96,
+      "duration_ms": 72861.29,
       "response": {
         "case_id": "PUB-003",
         "decision": "NOT_ADMISSIBLE",
@@ -215,35 +215,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 14976.261400000021,
+            "duration_ms": 14571.01352000009,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 14976.261400000021,
+            "duration_ms": 14571.01352000009,
             "retrieval_count": 18,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 14976.261400000021,
+            "duration_ms": 14571.01352000009,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 14976.261400000021,
+            "duration_ms": 14571.01352000009,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.00580000005356851,
+            "duration_ms": 0.005199999577598646,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -255,7 +255,7 @@
       "case_id": "PUB-004",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 77183.12,
+      "duration_ms": 71921.95,
       "response": {
         "case_id": "PUB-004",
         "decision": "ADMISSIBLE_WITH_LIMITS",
@@ -310,35 +310,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 15435.564939999993,
+            "duration_ms": 14383.166359999997,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 15435.564939999993,
+            "duration_ms": 14383.166359999997,
             "retrieval_count": 18,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 15435.564939999993,
+            "duration_ms": 14383.166359999997,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 15435.564939999993,
+            "duration_ms": 14383.166359999997,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.007599999889862374,
+            "duration_ms": 0.007900000127847306,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -350,7 +350,7 @@
       "case_id": "PUB-005",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 72809.28,
+      "duration_ms": 70884.72,
       "response": {
         "case_id": "PUB-005",
         "decision": "ADMISSIBLE",
@@ -386,35 +386,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 14560.734400000001,
+            "duration_ms": 14175.709579999966,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 14560.734400000001,
+            "duration_ms": 14175.709579999966,
             "retrieval_count": 17,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 14560.734400000001,
+            "duration_ms": 14175.709579999966,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 14560.734400000001,
+            "duration_ms": 14175.709579999966,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.005500000042957254,
+            "duration_ms": 0.006300000677583739,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -426,7 +426,7 @@
       "case_id": "PUB-006",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 97610.77,
+      "duration_ms": 72750.27,
       "response": {
         "case_id": "PUB-006",
         "decision": "NEEDS_REVIEW",
@@ -492,35 +492,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 19520.880419999958,
+            "duration_ms": 14548.850579999998,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 19520.880419999958,
+            "duration_ms": 14548.850579999998,
             "retrieval_count": 18,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 19520.880419999958,
+            "duration_ms": 14548.850579999998,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 19520.880419999958,
+            "duration_ms": 14548.850579999998,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.006799999937356915,
+            "duration_ms": 0.0073999999585794285,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -532,7 +532,7 @@
       "case_id": "PUB-007",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 87427.63,
+      "duration_ms": 71466.1,
       "response": {
         "case_id": "PUB-007",
         "decision": "ADMISSIBLE_WITH_LIMITS",
@@ -608,35 +608,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 17484.46329999997,
+            "duration_ms": 14291.884859999846,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 17484.46329999997,
+            "duration_ms": 14291.884859999846,
             "retrieval_count": 18,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 17484.46329999997,
+            "duration_ms": 14291.884859999846,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 17484.46329999997,
+            "duration_ms": 14291.884859999846,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.007000000096013537,
+            "duration_ms": 0.007599999662488699,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -648,7 +648,7 @@
       "case_id": "PUB-008",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 81375.44,
+      "duration_ms": 75538.93,
       "response": {
         "case_id": "PUB-008",
         "decision": "NOT_ADMISSIBLE",
@@ -684,35 +684,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 16273.836180000037,
+            "duration_ms": 15106.150279999929,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 16273.836180000037,
+            "duration_ms": 15106.150279999929,
             "retrieval_count": 17,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 16273.836180000037,
+            "duration_ms": 15106.150279999929,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 16273.836180000037,
+            "duration_ms": 15106.150279999929,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.006100000064179767,
+            "duration_ms": 0.005800000508315861,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -724,7 +724,7 @@
       "case_id": "PUB-009",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 84373.44,
+      "duration_ms": 71541.28,
       "response": {
         "case_id": "PUB-009",
         "decision": "ADMISSIBLE",
@@ -760,35 +760,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 16873.59667999999,
+            "duration_ms": 14306.991559999913,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 16873.59667999999,
+            "duration_ms": 14306.991559999913,
             "retrieval_count": 17,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 16873.59667999999,
+            "duration_ms": 14306.991559999913,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 16873.59667999999,
+            "duration_ms": 14306.991559999913,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.005899999905523146,
+            "duration_ms": 0.005500000042957254,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -798,16 +798,101 @@
     },
     {
       "case_id": "PUB-010",
-      "status": "CONNECTION_ERROR",
-      "http_status": null,
-      "duration_ms": 461943.22,
-      "error": "timed out"
+      "status": "OK",
+      "http_status": 200,
+      "duration_ms": 72891.14,
+      "response": {
+        "case_id": "PUB-010",
+        "decision": "ADMISSIBLE",
+        "confidence": 0.9,
+        "key_findings": [
+          {
+            "dimension": "day-care treatment",
+            "conclusion": "Eye surgery is expressly listed among treatments for which the 24-hour minimum can be waived.",
+            "material": true,
+            "citation_ids": [
+              "p07-c9749b252a49"
+            ]
+          },
+          {
+            "dimension": "first-year disease waiting period",
+            "conclusion": "The one-year cataract waiting period is waived by at least one completed year of continuous prior Indian individual health coverage, with prior claim-history evidence supplied.",
+            "material": true,
+            "citation_ids": [
+              "p09-dbf9222fc696"
+            ]
+          }
+        ],
+        "applicable_limits": [],
+        "missing_evidence": [],
+        "citations": [
+          {
+            "claim": "Policy evidence used by decision",
+            "source": "USGIC-CSCIndividualHealthInsurance_2017-2018.pdf",
+            "page": 9,
+            "section": "2. 30 days Waiting Period",
+            "chunk_id": "p09-dbf9222fc696",
+            "excerpt": "4. Injury or Illnesses directly or indirectly caused by or arising from or attributable to War, invasion, riot, strike, terrorism, act of foreign enemy, War like operation (whether War be declared or not). 5. Circumcision unless necessary for the treatment of an Illness not otherwise excluded or required as a result of accidental bodily injury; vaccination, inoculation, cosmetic or aesthetic treatment of any description(including any complications arising thereof), plastic surgery except those r"
+          },
+          {
+            "claim": "Policy evidence used by decision",
+            "source": "USGIC-CSCIndividualHealthInsurance_2017-2018.pdf",
+            "page": 7,
+            "section": "5. Stroke resulting in permanent symptoms",
+            "chunk_id": "p07-c9749b252a49",
+            "excerpt": "UNIVERSAL SOMPO GENERAL INSURANCE CO LTD 7 CSC- Individual Health Insurance-Policy Wording UNIHLIP18004V011718 IRDAI Reg No:134  Human bone marrow using haematopoietic stem cells. The undergoing of a transplant has to be confirmed by a specialist Medical Practitioner Exclusion  Other stem-cell transplants  Where only islets of langerhans are transplanted 5. Stroke resulting in permanent symptoms Any cerebrovascular incident producing permanent neurological sequelae. This includes infarction o"
+          }
+        ],
+        "validation": {
+          "status": "PASS",
+          "unsupported_claims": [],
+          "revision_signal": null
+        },
+        "trace": [
+          {
+            "agent": "CaseAnalysisAgent",
+            "action": "LangGraph node: structured case analysis",
+            "duration_ms": 14576.948339999944,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "PolicyEvidenceAgent",
+            "action": "LangGraph node: hybrid retrieval + fusion + reranking",
+            "duration_ms": 14576.948339999944,
+            "retrieval_count": 18,
+            "status": "OK"
+          },
+          {
+            "agent": "CoverageExclusionAgent",
+            "action": "LangGraph node: policy coverage/exclusion analysis",
+            "duration_ms": 14576.948339999944,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "DecisionAgent",
+            "action": "LangGraph node: structured decision",
+            "duration_ms": 14576.948339999944,
+            "retrieval_count": 0,
+            "status": "OK"
+          },
+          {
+            "agent": "ValidationAgent",
+            "action": "Checked material findings and limits for policy citations",
+            "duration_ms": 0.007100000402715523,
+            "retrieval_count": 0,
+            "status": "PASS"
+          }
+        ],
+        "payable_estimate_inr": 80000.0
+      }
     },
     {
       "case_id": "PUB-011",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 80995.5,
+      "duration_ms": 71623.75,
       "response": {
         "case_id": "PUB-011",
         "decision": "NEEDS_REVIEW",
@@ -854,35 +939,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 16195.471400000042,
+            "duration_ms": 14323.693999999887,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 16195.471400000042,
+            "duration_ms": 14323.693999999887,
             "retrieval_count": 17,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 16195.471400000042,
+            "duration_ms": 14323.693999999887,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 16195.471400000042,
+            "duration_ms": 14323.693999999887,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.008400000297115184,
+            "duration_ms": 0.006799999937356915,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -894,7 +979,7 @@
       "case_id": "PUB-012",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 122995.62,
+      "duration_ms": 70879.64,
       "response": {
         "case_id": "PUB-012",
         "decision": "NOT_ADMISSIBLE",
@@ -930,35 +1015,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 24597.735719999946,
+            "duration_ms": 14174.743860000128,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 24597.735719999946,
+            "duration_ms": 14174.743860000128,
             "retrieval_count": 17,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 24597.735719999946,
+            "duration_ms": 14174.743860000128,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 24597.735719999946,
+            "duration_ms": 14174.743860000128,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.012299999980314169,
+            "duration_ms": 0.006799999937356915,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -969,21 +1054,21 @@
   ],
   "summary": {
     "total": 12,
-    "successful": 11,
-    "failed": 1,
+    "successful": 12,
+    "failed": 0,
     "decisions": {
       "ADMISSIBLE_WITH_LIMITS": 3,
       "NOT_ADMISSIBLE": 4,
-      "ADMISSIBLE": 2,
+      "ADMISSIBLE": 3,
       "NEEDS_REVIEW": 2
     },
     "validation": {
-      "PASS": 11
+      "PASS": 12
     },
     "needs_review_cases": [
       "PUB-006",
       "PUB-011"
     ],
-    "average_duration_ms": 84618.38
+    "average_duration_ms": 72470.56
   }
 }

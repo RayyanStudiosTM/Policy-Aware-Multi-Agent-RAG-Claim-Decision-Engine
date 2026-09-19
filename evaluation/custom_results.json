@@ -1,5 +1,5 @@
 {
-  "generated_at_utc": "2026-09-19T05:07:24.540816+00:00",
+  "generated_at_utc": "2026-09-19T05:44:29.307337+00:00",
   "base_url": "http://127.0.0.1:8000",
   "source_file": "C:\\Users\\shaik\\Desktop\\aptino\\aptino-claim-engine\\data\\custom_cases\\custom_test_cases.json",
   "cases": [
@@ -7,7 +7,7 @@
       "case_id": "CUSTOM-001",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 91648.17,
+      "duration_ms": 69312.89,
       "response": {
         "case_id": "CUSTOM-001",
         "decision": "ADMISSIBLE_WITH_LIMITS",
@@ -63,35 +63,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 18328.25698000006,
+            "duration_ms": 13861.515979999967,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 18328.25698000006,
+            "duration_ms": 13861.515979999967,
             "retrieval_count": 18,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 18328.25698000006,
+            "duration_ms": 13861.515979999967,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 18328.25698000006,
+            "duration_ms": 13861.515979999967,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.007900000127847306,
+            "duration_ms": 0.007199999345175456,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -103,7 +103,7 @@
       "case_id": "CUSTOM-002",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 75686.55,
+      "duration_ms": 70155.05,
       "response": {
         "case_id": "CUSTOM-002",
         "decision": "ADMISSIBLE",
@@ -121,35 +121,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 15135.803559999931,
+            "duration_ms": 14029.762819999998,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 15135.803559999931,
+            "duration_ms": 14029.762819999998,
             "retrieval_count": 17,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 15135.803559999931,
+            "duration_ms": 14029.762819999998,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 15135.803559999931,
+            "duration_ms": 14029.762819999998,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.005299999884300632,
+            "duration_ms": 0.005300000339047983,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -161,7 +161,7 @@
       "case_id": "CUSTOM-003",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 73192.63,
+      "duration_ms": 68901.51,
       "response": {
         "case_id": "CUSTOM-003",
         "decision": "ADMISSIBLE_WITH_LIMITS",
@@ -199,35 +199,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 14636.680640000031,
+            "duration_ms": 13779.136479999943,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 14636.680640000031,
+            "duration_ms": 13779.136479999943,
             "retrieval_count": 18,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 14636.680640000031,
+            "duration_ms": 13779.136479999943,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 14636.680640000031,
+            "duration_ms": 13779.136479999943,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.0064000000747910235,
+            "duration_ms": 0.006199999916134402,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -239,7 +239,7 @@
       "case_id": "CUSTOM-004",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 74316.71,
+      "duration_ms": 69944.28,
       "response": {
         "case_id": "CUSTOM-004",
         "decision": "NOT_ADMISSIBLE",
@@ -275,35 +275,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 14862.066979999963,
+            "duration_ms": 13987.583719999931,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 14862.066979999963,
+            "duration_ms": 13987.583719999931,
             "retrieval_count": 17,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 14862.066979999963,
+            "duration_ms": 13987.583719999931,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 14862.066979999963,
+            "duration_ms": 13987.583719999931,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.006100000064179767,
+            "duration_ms": 0.012999999853491317,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -315,7 +315,7 @@
       "case_id": "CUSTOM-005",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 70508.63,
+      "duration_ms": 67838.81,
       "response": {
         "case_id": "CUSTOM-005",
         "decision": "NOT_ADMISSIBLE",
@@ -351,35 +351,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 14100.679719999971,
+            "duration_ms": 13566.453420000107,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 14100.679719999971,
+            "duration_ms": 13566.453420000107,
             "retrieval_count": 17,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 14100.679719999971,
+            "duration_ms": 13566.453420000107,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 14100.679719999971,
+            "duration_ms": 13566.453420000107,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.007199999799922807,
+            "duration_ms": 0.007599999662488699,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -391,7 +391,7 @@
       "case_id": "CUSTOM-006",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 70034.08,
+      "duration_ms": 69258.06,
       "response": {
         "case_id": "CUSTOM-006",
         "decision": "NEEDS_REVIEW",
@@ -429,35 +429,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 14005.706819999978,
+            "duration_ms": 13850.559400000022,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 14005.706819999978,
+            "duration_ms": 13850.559400000022,
             "retrieval_count": 18,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 14005.706819999978,
+            "duration_ms": 13850.559400000022,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 14005.706819999978,
+            "duration_ms": 13850.559400000022,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.006499999926745659,
+            "duration_ms": 0.007599999662488699,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -469,7 +469,7 @@
       "case_id": "CUSTOM-007",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 69637.2,
+      "duration_ms": 73213.59,
       "response": {
         "case_id": "CUSTOM-007",
         "decision": "ADMISSIBLE_WITH_LIMITS",
@@ -507,35 +507,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 13926.316640000005,
+            "duration_ms": 14641.455339999991,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 13926.316640000005,
+            "duration_ms": 14641.455339999991,
             "retrieval_count": 18,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 13926.316640000005,
+            "duration_ms": 14641.455339999991,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 13926.316640000005,
+            "duration_ms": 14641.455339999991,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.006999999641266186,
+            "duration_ms": 0.006400000529538374,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -547,7 +547,7 @@
       "case_id": "CUSTOM-008",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 69400.35,
+      "duration_ms": 72770.8,
       "response": {
         "case_id": "CUSTOM-008",
         "decision": "ADMISSIBLE",
@@ -565,35 +565,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 13878.745640000034,
+            "duration_ms": 14552.798919999987,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 13878.745640000034,
+            "duration_ms": 14552.798919999987,
             "retrieval_count": 18,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 13878.745640000034,
+            "duration_ms": 14552.798919999987,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 13878.745640000034,
+            "duration_ms": 14552.798919999987,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.004699999863078119,
+            "duration_ms": 0.0052999994295532815,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -605,7 +605,7 @@
       "case_id": "CUSTOM-009",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 296159.36,
+      "duration_ms": 76144.14,
       "response": {
         "case_id": "CUSTOM-009",
         "decision": "ADMISSIBLE",
@@ -623,35 +623,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 59230.79707999995,
+            "duration_ms": 15227.523539999855,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 59230.79707999995,
+            "duration_ms": 15227.523539999855,
             "retrieval_count": 18,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 59230.79707999995,
+            "duration_ms": 15227.523539999855,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 59230.79707999995,
+            "duration_ms": 15227.523539999855,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.003999999989900971,
+            "duration_ms": 0.00470000031782547,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -663,7 +663,7 @@
       "case_id": "CUSTOM-010",
       "status": "OK",
       "http_status": 200,
-      "duration_ms": 69203.54,
+      "duration_ms": 73661.1,
       "response": {
         "case_id": "CUSTOM-010",
         "decision": "ADMISSIBLE_WITH_LIMITS",
@@ -719,35 +719,35 @@
           {
             "agent": "CaseAnalysisAgent",
             "action": "LangGraph node: structured case analysis",
-            "duration_ms": 13839.521779999995,
+            "duration_ms": 14730.914359999952,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "PolicyEvidenceAgent",
             "action": "LangGraph node: hybrid retrieval + fusion + reranking",
-            "duration_ms": 13839.521779999995,
+            "duration_ms": 14730.914359999952,
             "retrieval_count": 18,
             "status": "OK"
           },
           {
             "agent": "CoverageExclusionAgent",
             "action": "LangGraph node: policy coverage/exclusion analysis",
-            "duration_ms": 13839.521779999995,
+            "duration_ms": 14730.914359999952,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "DecisionAgent",
             "action": "LangGraph node: structured decision",
-            "duration_ms": 13839.521779999995,
+            "duration_ms": 14730.914359999952,
             "retrieval_count": 0,
             "status": "OK"
           },
           {
             "agent": "ValidationAgent",
             "action": "Checked material findings and limits for policy citations",
-            "duration_ms": 0.007099999947968172,
+            "duration_ms": 0.01249999968422344,
             "retrieval_count": 0,
             "status": "PASS"
           }
@@ -772,6 +772,6 @@
     "needs_review_cases": [
       "CUSTOM-006"
     ],
-    "average_duration_ms": 95978.72
+    "average_duration_ms": 71120.02
   }
 }
