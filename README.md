@@ -36,6 +36,9 @@ The design intentionally separates claim interpretation, policy evidence retriev
 
 ## 2. Architecture
 
+<img width="1536" height="1024" alt="arch" src="https://github.com/user-attachments/assets/826fce7e-d8cb-4579-ad24-cfc32c2fd4a7" />
+
+
 ```text
                          ┌──────────────────────┐
                          │      Streamlit       │
@@ -92,6 +95,8 @@ The design intentionally separates claim interpretation, policy evidence retriev
                          │ trace                │
                          └──────────────────────┘
 ```
+### User Flow
+<img width="1536" height="1024" alt="user_flow" src="https://github.com/user-attachments/assets/955e1232-5016-4c94-824d-4b118d3b5930" />
 
 ### Agent boundaries
 
@@ -151,6 +156,7 @@ The response is machine-readable and includes the evidence required to inspect m
 ---
 
 ## 4. Hybrid RAG Design
+<img width="800" height="533" alt="rag" src="https://github.com/user-attachments/assets/5b81d5f3-f704-49e6-8d2d-63efa0c030d8" />
 
 The policy PDF is processed into meaningful chunks with:
 
@@ -639,8 +645,8 @@ The current 34-chunk policy index is intentionally simple and reproducible. A pr
 - [x] At least 2 NEEDS_REVIEW cases
 - [x] Failure analysis
 - [x] Local reproducibility
-- [ ] Final verified live frontend URL
-- [ ] Final verified live API URL
+- [x] Final verified live frontend URL
+- [x] Final verified live API URL
 
 ---
 
