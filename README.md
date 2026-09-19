@@ -1,5 +1,14 @@
 # Policy-Aware Multi-Agent RAG Claim Decision Engine
 
+**Live Frontend:** https://aptino-claim-frontend.onrender.com  
+**Live API:** https://aptino-claim-api.onrender.com  
+**API Docs:** https://aptino-claim-api.onrender.com/docs  
+**GitHub Repository:** https://github.com/RayyanStudiosTM/Policy-Aware-Multi-Agent-RAG-Claim-Decision-Engine
+
+An AI-powered, policy-grounded health-insurance claim analysis system built for the Aptino AI Engineer take-home assignment.
+
+# Policy-Aware Multi-Agent RAG Claim Decision Engine
+
 An AI-powered, policy-grounded health-insurance claim analysis system built for the Aptino AI Engineer take-home assignment.
 
 **Repository:** https://github.com/RayyanStudiosTM/Policy-Aware-Multi-Agent-RAG-Claim-Decision-Engine
